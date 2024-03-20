@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+//* Fonts
+@font-face {
+  font-family: "Stardew_Valley";
+  src: url("assets/fonts/Stardew_Valley.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//* Colors
+:root {
+  --title-text-color: #56160c;
+  --title-text-shadow-color: #56160c3f;
+  --title-background-color: #fbc571;
+}
+
+//* Sizes
+:root {
+  --body-width: 1200px;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+
+  --title-1-font-size: 48px;
+  --title-1-line-height: 48px;
+}
+
+//* General
+body {
+  width: var(--body-width);
+  margin: var(--spacing-small) auto;
+}
+
+h1 {
+  font-family: "Stardew_Valley";
+  font-size: var(--title-1-font-size);
+  line-height: var(--title-1-line-height);
+  color: var(--title-text-color);
+  text-shadow: var(--title-text-shadow-color) -2px 2px 0;
+  margin: 0
+}
